@@ -1,6 +1,7 @@
 # React Server Components Demo 
 
-> This is a fork of the original demo without the Postgres dependency
+> This is a fork of the original demo without the Postgres dependency.
+
 > Also will be a platform for me to test a different demo sample with references to the current notes app ---- educational use
 
 * [What is this?](#what-is-this)
