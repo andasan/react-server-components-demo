@@ -15,7 +15,7 @@ import {useLocation} from './LocationContext.client';
 
 export default function NoteEditor({noteId, initialTitle, initialBody}) {
   const refresh = useRefresh();
-  const [title, setTitle] = useState(initialTitle);
+  const [title, setTitle] = useState("");
   const [body, setBody] = useState(initialBody);
   const [location, setLocation] = useLocation();
   const [startNavigating, isNavigating] = unstable_useTransition();
@@ -74,7 +74,7 @@ export default function NoteEditor({noteId, initialTitle, initialBody}) {
           id="note-title-input"
           type="text"
           value={title}
-          onFocus={() => setTitle("")}
+          placeholder={initialTitle}
           onChange={(e) => {
             setTitle(e.target.value);
           }}
