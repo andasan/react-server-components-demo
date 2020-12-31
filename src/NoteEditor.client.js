@@ -74,6 +74,7 @@ export default function NoteEditor({noteId, initialTitle, initialBody}) {
           id="note-title-input"
           type="text"
           value={title}
+          onFocus={() => setTitle("")}
           onChange={(e) => {
             setTitle(e.target.value);
           }}

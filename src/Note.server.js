@@ -45,7 +45,7 @@ export default function Note({selectedId, isEditing}) {
   // body = readFile(path.resolve(`./notes/${note.id}.md`), 'utf8');
 
   // Now let's see how the Suspense boundary above lets us not block on this.
-  fetch('http://localhost:4000/sleep/3000');
+  // fetch('http://localhost:4000/sleep/3000');
 
   if (isEditing) {
     return <NoteEditor noteId={id} initialTitle={title} initialBody={body} />;
